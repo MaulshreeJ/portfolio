@@ -258,7 +258,34 @@ section{padding:100px 28px;max-width:1160px;margin:0 auto;}
 /* FOOTER */
 footer{text-align:center;padding:28px;border-top:1px solid rgba(255,255,255,.06);font-size:13px;color:var(--text3);}
 
+
+/* 3D CORE (HERO) */
+.core{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:600px;height:600px;perspective:1000px;z-index:0;opacity:.25;pointer-events:none;
+}
+.ring{
+  position:absolute;inset:0;border-radius:50%;
+  border:1px solid rgba(255,255,255,.1);
+  transform-style:preserve-3d;
+}
+.r1{animation:r1 20s linear infinite;}
+.r2{animation:r2 25s linear infinite;width:80%;height:80%;top:10%;left:10%;border:1px dashed rgba(10,132,255,.4);}
+.r3{animation:r3 30s linear infinite;width:60%;height:60%;top:20%;left:20%;border:1px solid rgba(191,90,242,.2);}
+
+@keyframes r1{ 0%{transform:rotateX(70deg) rotateY(0deg) rotateZ(0deg);} 100%{transform:rotateX(70deg) rotateY(360deg) rotateZ(360deg);} }
+@keyframes r2{ 0%{transform:rotateX(60deg) rotateY(45deg) rotateZ(0deg);} 100%{transform:rotateX(60deg) rotateY(45deg) rotateZ(-360deg);} }
+@keyframes r3{ 0%{transform:rotateX(80deg) rotateY(-45deg) rotateZ(0deg);} 100%{transform:rotateX(80deg) rotateY(-45deg) rotateZ(360deg);} }
+
+/* 3D PARALLAX FOR CARDS */
+.gc { transform-style: preserve-3d; }
+.gc * { transform-style: preserve-3d; }
+.siw, .pvis, .aico, .elogo { transform: translateZ(40px); }
+.stit, .ptit, .atit, .eco, .cgbg { transform: translateZ(25px); }
+.tags, .pchips, .pmetrics, .ebul { transform: translateZ(15px); }
+
 /* ANIMATIONS */
+
 @keyframes ci{from{opacity:0;transform:translateY(10px) scale(.95);}to{opacity:1;transform:translateY(0) scale(1);}}
 @keyframes hi{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 .rev{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease;}
@@ -288,6 +315,11 @@ footer{text-align:center;padding:28px;border-top:1px solid rgba(255,255,255,.06)
 <body>
 
 <div class="amb" aria-hidden="true">
+  <div class="core">
+    <div class="ring r1"></div>
+    <div class="ring r2"></div>
+    <div class="ring r3"></div>
+  </div>
   <div class="ab ab1"></div>
   <div class="ab ab2"></div>
   <div class="ab ab3"></div>
@@ -497,7 +529,20 @@ footer{text-align:center;padding:28px;border-top:1px solid rgba(255,255,255,.06)
 <footer>© 2026 Maulshree Jatrana &nbsp;·&nbsp; Built with precision</footer>
 
 <script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script>
+// Initialize 3D glass cards
+VanillaTilt.init(document.querySelectorAll(".gc"), {
+  max: 6,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.08,
+  perspective: 1000,
+  scale: 1.01
+});
+
 const els = document.querySelectorAll('.rev');
+
 const io = new IntersectionObserver(entries => {
   entries.forEach((e,i) => {
     if(e.isIntersecting){
