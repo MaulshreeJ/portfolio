@@ -4,6 +4,8 @@
 
 Based in Hyderabad, India. Open to AI/ML roles across India and remote roles.
 
+Keywords: AI engineer, Forward Deployed Engineer, AI agents, agentic AI, LangGraph, hybrid RAG, machine learning, computer vision, Order-to-Cash, Python, FastAPI, Hyderabad, India, remote.
+
 ## Links
 - [Portfolio](https://portfolio-six-drab-4v8ota9dk2.vercel.app/)
 - [LinkedIn](https://www.linkedin.com/in/maulshree-j-79694b323/)
