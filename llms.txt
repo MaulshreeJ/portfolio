@@ -1,0 +1,30 @@
+# Maulshree Jatrana
+
+> AI engineer and final-year B.E. Computer Science (AI) student at Chitkara University, Chandigarh, India (CGPA 9.89/10). Forward Deployed Engineer intern at HighRadius since July 2026, building AI agents for deductions management within the Order-to-Cash cycle.
+
+## Links
+- [Portfolio](https://portfolio-six-drab-4v8ota9dk2.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/maulshree-j-79694b323/)
+- [GitHub](https://github.com/MaulshreeJ)
+- [LeetCode](https://leetcode.com/u/Maulshree_22/)
+- [Resume (PDF)](https://portfolio-six-drab-4v8ota9dk2.vercel.app/Maulshree_Jatrana_Resume.pdf)
+
+## Experience
+- HighRadius: Forward Deployed Engineer Intern (Jul 2026 to Present). AI agents for the Deductions Management (DMS) product.
+- ServiceNow: Software Development Engineer Intern (Jun to Aug 2025). Automated enterprise workflows and reporting pipelines.
+- Microsoft Code Without Barriers Scholar (Apr to Jun 2025). Database optimization: 25% faster queries, latency cut from 45s to 12s.
+
+## Selected projects
+- Chargeback Shield: two-stage payment dispute risk system (HistGradientBoosting model plus deterministic policy engine), live in production.
+- Accreditation Copilot: hybrid RAG system (FAISS + BM25 + reranking), P@5 100%.
+- SyncUp: multi-agent LangGraph collaboration platform.
+- MindForge: CNN deepfake detector, 96% accuracy.
+
+## Recognition
+- Flipkart GRID 7.0 national semi-finalist (top 1% of 200,000+ participants)
+- Hackfest 2025: top 10 of 120 teams
+- First-author published research paper on AI-based ocean water management (2024)
+- Nutanix Certified Associate (NCA 6), Feb 2026
+
+## Contact
+jatranamaulshree@gmail.com
