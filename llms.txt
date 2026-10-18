@@ -2,6 +2,8 @@
 
 > AI engineer and final-year B.E. Computer Science (AI) student at Chitkara University, Chandigarh, India (CGPA 9.89/10). Forward Deployed Engineer intern at HighRadius since July 2026, building AI agents for deductions management within the Order-to-Cash cycle.
 
+Based in Hyderabad, India. Open to AI/ML roles across India.
+
 ## Links
 - [Portfolio](https://portfolio-six-drab-4v8ota9dk2.vercel.app/)
 - [LinkedIn](https://www.linkedin.com/in/maulshree-j-79694b323/)
